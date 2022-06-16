@@ -28,3 +28,6 @@ for qsize in 20 100; do
     python plot_queue.py -f $dir/q.txt -o $dir/q.png
     python plot_ping.py -f $dir/ping.txt -o $dir/rtt.png
 done
+
+echo “Simulations are done!Results can be retrieved via the server"
+python -m SimpleHTTPServer
